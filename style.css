@@ -6,7 +6,8 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/heroImage.jpeg');
+    background-color: black;
+    /* background: url('images/heroImage.jpeg'); */
     background-size:cover;
     position:relative;
 }
@@ -40,6 +41,12 @@
 }
 
 /* services section css */
+#services{
+    background-color: black;
+}
+.text-center {
+    color: white;
+}
 .servicesText.card {
     height: 280px;
     cursor: pointer;
@@ -69,6 +76,9 @@
 }
 .fab {
     color: #000000;
+}
+#contact{
+    background-color: black;
 }
 /* footer styling */
 #footer {
