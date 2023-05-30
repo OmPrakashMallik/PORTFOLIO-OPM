@@ -74,6 +74,16 @@
     background-color: #2d2d2d;
     text-align: center;
 }
+#footer2 {
+    text-align: left;
+}
+.footer2{
+    height: 40px;
+    padding: 10px;
+    color: gray;
+    background-color: #141414;
+    /* background-color: #000000; */
+}
 
 /* social media icons styling */
 .social-icons {
