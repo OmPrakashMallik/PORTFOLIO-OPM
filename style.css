@@ -70,7 +70,7 @@
 
 /* footer styling */
 #footer {
-    height: 100px;
+    height: 150px;
     background-color: #2d2d2d;
     text-align: center;
 }
@@ -81,13 +81,13 @@
     cursor: pointer;
 }
 .fa-facebook:hover {
-    color: #3b5998;
+    color: #2a4785;
 }
 .fa-instagram:hover {
     color:#cd201f;
 }
 .fa-twitter:hover{
-    color:#55acee;
+    color:#38a0f0;
 }
 .fa-linkedin:hover{
     color:#0077b5;
@@ -101,10 +101,3 @@
 #contact{
     background-color: black;
 }
-
-.section1 {
-    margin-bottom: 0;
-  }
-  .section2 {
-    margin-top: 0;
-  }
