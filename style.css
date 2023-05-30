@@ -1,6 +1,7 @@
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
-    background-color: black;
+    background-color: white;
+    color: black;
 }
 
 /* hero background image */
@@ -66,13 +67,33 @@
     border: 1px solid #008000;
 }
 
+
+/* footer styling */
+#footer {
+    height: 100px;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
 /* social media icons styling */
 .social-icons {
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #008000;
+.fa-facebook:hover {
+    color: #3b5998;
+}
+.fa-instagram:hover {
+    color:#cd201f;
+}
+.fa-twitter:hover{
+    color:#55acee;
+}
+.fa-linkedin:hover{
+    color:#0077b5;
+}
+.fa-youtube:hover{
+    color: 	#cd201f;
 }
 .fab {
     color: #000000;
@@ -80,8 +101,10 @@
 #contact{
     background-color: black;
 }
-/* footer styling */
-#footer {
-    background-color: #808080;
-    text-align: center;
-}
+
+.section1 {
+    margin-bottom: 0;
+  }
+  .section2 {
+    margin-top: 0;
+  }
