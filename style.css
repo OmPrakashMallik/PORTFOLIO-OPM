@@ -1,9 +1,17 @@
 /* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
+/* .navbarScroll.navbarDark {
     background-color: white;
     color: black;
-}
+} */
 
+.navbar {
+    background-color: red;
+}
+.navbar.sticky {
+    background-color: rgb(0, 47, 255);
+    color: white;
+    transition: 0.5s;
+}
 /* hero background image */
 .bgimage {
     height:100vh;
@@ -64,7 +72,7 @@
 .card-title {
     text-align: center;
 }
-.card:hover .servicesIcon {
+.card:hover .skills-Icon {
     color: #008000;
 }
 .servicesText:hover {

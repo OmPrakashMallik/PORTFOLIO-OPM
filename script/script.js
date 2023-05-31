@@ -4,10 +4,10 @@ console.log(header)
 window.onscroll = function() {
     const top = window.scrollY;
     if(top >=100) {
-        header.classList.add('navbarDark');
+        header.classList.add('sticky');
     }
     else {
-        header.classList.remove('navbarDark');
+        header.classList.remove('sticky');
     }
 }
 // collapse navbar after click on small devices
