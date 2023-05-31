@@ -37,11 +37,15 @@
     padding-bottom: 4rem;
 }
 /* about section image css */
-.imageAboutPage {
+.my_photo {
     width: 100%;
+    border-radius: 10%;
+}
+.my_photo:hover{
+    border: 2px solid blue
 }
 
-/* services section css */
+/* sKILLS section css */
 #services{
     background-color: black;
 }
@@ -52,8 +56,8 @@
     height: 280px;
     cursor: pointer;
   }
-.servicesIcon {
-    font-size: 36px;
+.skills-Icon {
+    font-size: 200px;
     text-align: center;
     width: 100%;
 }
