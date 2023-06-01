@@ -10,23 +10,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/0449db172b.js" crossorigin="anonymous"></script>
-  <!-- <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
-        <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
-            <a class="navbar-brand" href="#">OPM</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
@@ -34,10 +32,10 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">other</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -50,17 +48,13 @@
     </nav>
 
     <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2>Hi, i am Om Prakash Mallik</h2>
-                    <p>A computer science student passionate about web development and Programing.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    <div class="background">
+        <img src="images/bg.jpg" class="img-fluid">
+    </div>
+    <div class="heading-content text-center">
+        <h5 >Hello, i am </h5>
+        <h1>Om Prakash Mallik</h1>
+    </div>
 
     <!-- about section-->
     <section id="about">
@@ -95,7 +89,7 @@
     </section>
 
     <!-- skills section-->
-    <section id="services">
+    <section id="skills">
         <div class="container p-4">
             <h1 class="text-center">Skills</h1>
             <div class="row">
@@ -183,10 +177,10 @@
 
 
     <!-- projects-->
-    <section id="portfolio">
+    <section id="projects">
         <div class="container p-4">
             <h1 class="text-center text-dark">Projects</h1>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
                         <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
@@ -225,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </section>
@@ -316,15 +310,15 @@
                 <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
-    </footer>
-
-    <footer2  id="footer2">
-        <div class="container-fluid footer2 ">
-            <p>
+        </footer>
+        
+    <!-- <footer2>
+        <div class=" p-1">
+            <p class="">
                 Copyright 2023 Om Prakash Mallik. All Rights Reserved.
-            </p>
+             </p>
         </div>
-    </footer2>
+    </footer2> -->
 
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
