@@ -10,6 +10,12 @@
 //         header.classList.remove('sticky');
 //     }
 // }
+
+document.querySelector('.navbar-toggle').addEventListener('click', function() {
+    document.querySelector('.navbar-menu').classList.toggle('show');
+  });
+
+
 // collapse navbar after click on small devices
 const navLinks = document.querySelectorAll('.nav-item')
 const menuToggle = document.getElementById('navbarSupportedContent')
