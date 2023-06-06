@@ -1,24 +1,7 @@
-// add class navbarDark on navbar scroll
-// const header = document.querySelector('.navbar');
-// console.log(header)
-// window.onscroll = function() {
-//     const top = window.scrollY;
-//     if(top >=100) {
-//         header.classList.add('sticky');
-//     }
-//     else {
-//         header.classList.remove('sticky');
-//     }
-// }
 
 document.querySelector('.navbar-toggle').addEventListener('click', function() {
-    document.querySelector('.navbar-menu').classList.toggle('show');
-  });
-
-
-// collapse navbar after click on small devices
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarSupportedContent')
+  document.querySelector('.navbar-menu').classList.toggle('show');
+});
 
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
