@@ -56,31 +56,34 @@ body{
   }
   
 /* hero background image */
-.container-banner .banner {
-    /* align-items: center; */
+.container-banner {
+    padding: 60px;
     text-align: center;
-}
-.banner-img {
-    width: 100%;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/317/897/146/1920x1080-px-dark-heath-ledger-joker-monochrome-animals-frogs-hd-art-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
 }
 
 .banner-txt {
-    padding-top: 40px;
+    /* padding-top: 0px; */
 }
 
-/* banner */
+/*  */
 
-
-#contact {
-    padding-bottom: 4rem;
-}
 /* about section image css */
+.container-about{
+    text-align: center;
+    align-items: center;
+}
 .my_photo {
     width: 100%;
     border-radius: 10%;
 }
 .my_photo:hover{
     border: 2px solid blue
+}
+
+#contact {
+    padding-bottom: 4rem;
 }
 
 /* sKILLS section css */
