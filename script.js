@@ -1,8 +1,13 @@
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontent = document.getElementsByClassName("tab-content");
 
-document.querySelector('.navbar-toggle').addEventListener('click', function() {
-  document.querySelector('.navbar-menu').classList.toggle('show');
-});
-
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
-})
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tablink of tabcontent){
+        tablink.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
