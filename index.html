@@ -6,60 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/0449db172b.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/0449db172b.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
     <!-- HEADER -->
     <div id="header">
-        
-    </div>
-
-    <!-- navbar -->
-
-    <div class="navbar">
-      <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> HOME</a>
-      <a href="#about"><i class="fa-solid fa-address-card"></i> ABOUT</a>
-      <a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i> SKILLS</a>
-      <a href="#projects"><i class="fa-solid fa-laptop-file"></i> PROJECTS</a>
-      <a href="#contact"><i class="fa-solid fa-address-book"></i> CONTACT</a>
-    </div>
-
-    <!-- main banner -->
-    <div id="home" class="container-banner">
-        <header class="banner" id="home">
-            <h3 class="">Hello i am,</h3>
-            <h1 class="banner-txt">Om Prakash Mallik.</h1>
-            <p class="">Front End Developer and Programmer.</p>
-            <!-- <img class="banner-img" src="https://c4.wallpaperflare.com/wallpaper/317/897/146/1920x1080-px-dark-heath-ledger-joker-monochrome-animals-frogs-hd-art-wallpaper-preview.jpg"
-             alt="boy"> -->
-        </header>
+        <div class="container">
+            <nav>
+                <!-- <i class="logo fa-regular fa-user fa-lg"></i> -->
+                <!-- <i class="fa-thin fa-user fa-lg logo"></i> -->
+                <img src="images/my-photo.jpg" class="logo" />
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-laptop-file"></i> PROJECTS</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-address-book"></i> CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-txt">
+              <p>Front End Developer</p>
+              <h1>hello i am,<span> OPM</span><br>final year CSE student.</h1>
+            </div>
+          </div>
     </div>
 
     <!-- about section-->
-    <div id="about" class="container-about">
-        <h1 class="">About Me</h1>
-        <div class="">
-            <div class="">
-                <img src="/images/my-photo.jpg" class= "my_photo" alt="">
-            </div>
+    <div id="about">
+        <div class="container">
 
-            <div class="">
-                <div class="">
+            <div class="row">
+                <div class="column1">
+                    <img src="/images/my-photo.jpg" class="my_photo">
+                </div>
+                <div class="column2">
+                    <h1 class="sub-txt">About Me</h1>
                     <p>
-                            My name is Om Prakash Mallik. I'm an B.Tech CSE final year student at Katihar Engineering Collage, Katihar. 
-                            I was born and raised in Darbhanga Bihar.
-                            <br>
-                            I did my 12th frrom C. M. Science College Darbhanga and 10th from G. A. R. High School Rosera, Samastipur.
+                        My name is Om Prakash Mallik. I'm an B.Tech CSE final year student at Katihar Engineering Collage, Katihar. 
+                        I was born and raised in Darbhanga Bihar.
+                        I did my 12th frrom C. M. Science College Darbhanga and 10th from G. A. R. High School Rosera, Samastipur.
                     </p>
+                    <div class="tab-title">
+                        <p class="tab-links">skills</p>
+                        <p class="tab-links">skills</p>
+                        <p class="tab-links">skills</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <button class="">
-                <i class="fa fa-download"></i> Download Resume
-        </button>
     </div>
-  
+        
     <!-- skills section-->
     <section id="skills">
         <div class="container p-4">

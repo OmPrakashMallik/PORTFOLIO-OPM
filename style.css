@@ -9,154 +9,116 @@ body{
     background-color: #080808;
     color: #fff;
 }
+
+/* header */
 #header {
     width: 100%;
     height: 100vh;
     background-image: url("https://c4.wallpaperflare.com/wallpaper/317/897/146/1920x1080-px-dark-heath-ledger-joker-monochrome-animals-frogs-hd-art-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
 }
+
 
 /* NAVBAR */
-.navbar {
-    background-color: #ffffff;
-    position: sticky;
-    top: 0;
+.container {
+    padding: 10px 10%;
+}
+
+nav{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-    overflow: auto;
-  }
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+    border-radius: 50%;
+}
   
-  /* Navbar links */
-  .navbar a {
-    text-align: center;
-    padding: 20px;
-    color: black;
+/* Navbar links */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
-  }
-  
-  /* Navbar links on mouse-over */
-  .navbar a:hover {
-    color: white;
-    background-color: #000;
-    border-radius: 40px;
-  }
-  
-  /* Current/active navbar link */
-  /* .navbar a.active {
-    background-color: #000;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a ::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover ::after{
+    width: 100%;
+}
+
+.header-txt {
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-txt h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-txt h1 span {
+    color: #ff004f;
+}
+
+/* ABOUT */
+#about{
+    padding: 80px 0;
+    color: #fff;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column1{
+    flex-basis: 35%;
+}
+
+.column1 img{
+    width: 100%;
     border-radius: 20px;
-  } */
-  
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
-    .navbar {
-      flex-wrap: wrap;
-    }
-    
-    .navbar a {
-      flex: 0 0 100%;
-      display: block;
-      padding: 10px;
-      text-align: center;
-    }
-  }
-  
-/* hero background image */
-.container-banner {
-    padding: 60px;
-    text-align: center;
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/317/897/146/1920x1080-px-dark-heath-ledger-joker-monochrome-animals-frogs-hd-art-wallpaper-preview.jpg");
-    background-repeat: no-repeat;
 }
 
-.banner-txt {
-    /* padding-top: 0px; */
+.column2{
+    flex-basis: 60%;
 }
 
-/*  */
-
-/* about section image css */
-.container-about{
-    text-align: center;
-    align-items: center;
-}
-.my_photo {
-    width: 100%;
-    border-radius: 10%;
-}
-.my_photo:hover{
-    border: 2px solid blue
+.sub-txt{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
 }
 
-#contact {
-    padding-bottom: 4rem;
+.tab-title {
+    display: flex;
+    margin: 20px 0 40px;
 }
 
-/* sKILLS section css */
-#services{
-    background-color: black;
-}
-.text-center {
-    color: white;
-}
-.servicesText.card {
-    height: 280px;
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
     cursor: pointer;
-  }
-.skills-Icon {
-    font-size: 200px;
-    text-align: center;
-    width: 100%;
-}
-.card-title {
-    text-align: center;
-}
-.card:hover .skills-Icon {
-    color: #008000;
-}
-.servicesText:hover {
-    border: 1px solid #008000;
-}
-
-
-/* footer styling */
-#footer {
-    height: 150px;
-    background-color: #2d2d2d;
-    text-align: center;
-}
-#footer2 {
-    text-align: left;
-}
-
-
-/* social media icons styling */
-.social-icons {
-    font-size: 36px;
-    cursor: pointer;
-}
-.fa-facebook:hover {
-    color: #2a4785;
-}
-.fa-instagram:hover {
-    color:#cd201f;
-}
-.fa-twitter:hover{
-    color:#38a0f0;
-}
-.fa-linkedin:hover{
-    color:#0077b5;
-}
-.fa-youtube:hover{
-    color: 	#cd201f;
-}
-.fab {
-    color: #000000;
-}
-#contact{
-    background-color: black;
+    position: relative;
 }
