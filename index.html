@@ -15,13 +15,15 @@
         <div class="container">
             <nav>
                 <img src="images/my-photo.jpg" class="logo" />
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#projects"><i class="fa-solid fa-laptop-file"></i> PROJECTS</a></li>
-                    <li><a href="#contact"><i class="fa-solid fa-address-book"></i> CONTACT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-txt">
                 <h1>hello, i am<br><span> Om Prakash Mallik</span></h1>

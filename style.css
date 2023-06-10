@@ -365,6 +365,10 @@ form .btn2{
 
 /* --------------- CSS FOR SMALL SCREEN ---------------- */
 
+nav .fa-solid {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url("images/small-heasder.jpg");
@@ -375,6 +379,56 @@ form .btn2{
     }
     .header-txt h1 {
         font-size: 30px;
-        
     }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+
+    }
+    nav ul {
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-txt{
+        font-size: 40px;
+    }
+    .column1, .column2 {
+        flex-basis: 100%;
+    }
+    .column1 {
+        margin-bottom: 30px;
+    }
+
+    .column2 {
+        font-size: 14px;
+    }
+    .tab-links {
+        font-size: 16px;
+        /* margin-right: 20px; */
+    }
+
+    .contact-l, .contact-r {
+        flex-basis: 100%;
+    }
+
 }
