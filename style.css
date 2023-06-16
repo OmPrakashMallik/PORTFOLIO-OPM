@@ -18,7 +18,7 @@ body{
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url("images/dark-bg.jpg");
+    background-image: url("images/_land-Royal\ Blue\ Dark\ Blue\ Phone\ Wallpaper.jpeg");
     /* background-image: url("https://c4.wallpaperflare.com/wallpaper/317/897/146/1920x1080-px-dark-heath-ledger-joker-monochrome-animals-frogs-hd-art-wallpaper-preview.jpg"); */
     background-size: cover;
     background-position: center;
@@ -375,7 +375,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url("images/small-heasder.jpg");
+        background-image: url("images/Royal\ Blue\ Dark\ Blue\ Phone\ Wallpaper.jpeg");
     }
     .header-txt {
         margin-top: 100%;
