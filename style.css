@@ -57,7 +57,7 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a ::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -68,7 +68,7 @@ nav ul li a ::after{
     transition: 0.5s;
 }
 
-nav ul li a:hover ::after{
+nav ul li a:hover::after {
     width: 100%;
 }
 
@@ -416,16 +416,15 @@ nav .fa-solid {
     .sub-txt{
         font-size: 40px;
     }
-    .column1, .column2 {
-        flex-basis: 100%;
-    }
     .column1 {
+        flex-basis: 100%;
         margin-bottom: 30px;
     }
-
     .column2 {
+        flex-basis: 100%;
         font-size: 14px;
     }
+
     .tab-links {
         font-size: 16px;
         /* margin-right: 20px; */
@@ -436,7 +435,8 @@ nav .fa-solid {
     }
 
     .copyright {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 25px 0;
     }
     .contact-l p{
         font-size: 14px;
