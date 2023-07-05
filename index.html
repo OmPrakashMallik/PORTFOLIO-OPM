@@ -1,219 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>OPM Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/0449db172b.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <title>OPM Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/0449db172b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
-    <div id="header">
-        <div class="container">
-            <nav>
-                <h1 class="logo">OPM</h1>
-                <!-- <img src="images/my-photo.jpg" class="logo" /> -->
-                <ul id="sidemenu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-txt">
-                <h3>hello, i am</h3>
-                <h1>Om Prakash Mallik</h1>
-                <p>A final year B.tech student who loves to program and Front End Developer.</p>
-            </div>
-          </div>
-    </div>
+    <header id="header" class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <nav class="navbar" id="sidemenu">
+        <a href="#">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </header>
+
+    <!-- Home section-->
+    <section class="home" id="Home">
+      <div class="home-content">
+        <h3>hello, it's Me</h3>
+        <h1>Om Prakash Mallik</h1>
+        <h3>And I am a <span class="text"></span></h3>
+        <p>
+          A final year B.tech student who loves to program and Front End
+          Developer.
+        </p>
+        <div class="home-scr"></div>
+      </div>
+    </section>
 
     <!-- about section-->
     <div id="about">
-        <div class="container">
+      <div class="container">
+        <h1 class="sub-txt">About Me</h1>
+        <div class="row">
+          <div class="column1">
+            <img src="/images/my-photo-3.jpg" class="my_photo" />
+          </div>
 
-            <h1 class="sub-txt">About Me</h1>
-            <div class="row">
-
-                <div class="column1">
-                    <img src="/images/my-photo-3.jpg" class="my_photo">
-                </div>
-
-                <div class="column2">
-                    <!-- <h1 class="sub-txt">About Me</h1> -->
-                    <p>
-                        My name is Om Prakash Mallik. I'm an B.Tech CSE final year student at Katihar Engineering Collage, Katihar. 
-                        I was born and raised in Darbhanga Bihar.
-                        I did my 12th frrom C. M. Science College Darbhanga and 10th from G. A. R. High School Rosera, Samastipur.
-                    </p>
-                    <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Personal Details</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                        <!-- <p class="tab-links" onclick="opentab('Experiance')">O121154</p> -->
-                    </div>
-                    <div class="tab-content active-tab" id="Skills">
-                        <ul>
-                            <li><span>Address</span><br>Darbhanga, Bihar, Pincode - 848213</li>
-                            <li><span>Contact</span><br>+91 7352281493<br> omprakashmallik91@gmail.com</li>
-                            <li><span>Date of birth</span><br>20 Dec 2000</li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="Experiance">
-                        <ul>
-                            <li><span>UI/UX 2</span><br>Designer 2</li>
-                            <li><span>UI/UX 2</span><br>Designer 2</li>
-                            <li><span>UI/UX 2</span><br>Designer 2</li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="Education">
-                        <ul>
-                            <li><span>B.Tech</span><br>Katihar Engineering College, Katihar</li>
-                            <li><span>12th</span><br>C. M. Science College Darbhanga</li>
-                            <li><span>10th</span><br>Govt. R. High School Rosera, Samastipur</li>
-                        </ul>
-                    </div>
-                    <a class="btn btn3" href="images/my-photo.jpg" download>Download CV</a>
-                    <div class="code-icons">
-                        <a href="https://github.com/OmPrakashMallik" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://auth.geeksforgeeks.org/user/omprakashmallik91/practice">GFG</a>
-                        <a href="https://leetcode.com/OmPrakashMallik/">LeetCode</a>
-                    </div>
-                </div>
+          <div class="column2">
+            <!-- <h1 class="sub-txt">About Me</h1> -->
+            <p>
+              My name is Om Prakash Mallik. I'm an B.Tech CSE final year student
+              at Katihar Engineering Collage, Katihar. I was born and raised in
+              Darbhanga Bihar. I did my 12th frrom C. M. Science College
+              Darbhanga and 10th from G. A. R. High School Rosera, Samastipur.
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Personal Details
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+              <!-- <p class="tab-links" onclick="opentab('Experiance')">O121154</p> -->
             </div>
+            <div class="tab-content active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Address</span><br />Darbhanga, Bihar, Pincode - 848213
+                </li>
+                <li>
+                  <span>Contact</span><br />+91 7352281493<br />
+                  omprakashmallik91@gmail.com
+                </li>
+                <li><span>Date of birth</span><br />20 Dec 2000</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Experiance">
+              <ul>
+                <li><span>UI/UX 2</span><br />Designer 2</li>
+                <li><span>UI/UX 2</span><br />Designer 2</li>
+                <li><span>UI/UX 2</span><br />Designer 2</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Education">
+              <ul>
+                <li>
+                  <span>B.Tech</span><br />Katihar Engineering College, Katihar
+                </li>
+                <li><span>12th</span><br />C. M. Science College Darbhanga</li>
+                <li>
+                  <span>10th</span><br />Govt. R. High School Rosera, Samastipur
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn3" href="images/my-photo.jpg" download
+              >Download CV</a
+            >
+            <div class="code-icons">
+              <a href="https://github.com/OmPrakashMallik" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://auth.geeksforgeeks.org/user/omprakashmallik91/practice"
+                >GFG</a
+              >
+              <a href="https://leetcode.com/OmPrakashMallik/">LeetCode</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-        
     <!-- skills section-->
     <div id="skills">
-        <div class="container">
-            <h1 class="sub-txt">Skills</h1>
-            <div class="skill-list">
-                <div>
-                    <i class="fa-brands fa-java"></i>
-                    <!-- <i class="fa-brands fa-app-store-ios"></i> -->
-                    <h2>Java</h2>
-                    <p>discription</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-python"></i>
-                    <h2>Python</h2>
-                    <p>discription</p>
-                    <!-- <a href="#">learn more</a> -->
-                </div>
-                <div>
-                    <!-- <i class="fa-brands fa-app-store-ios"></i> -->
-                    <i class="fa-brands fa-square-js"></i>
-                    <h2>javaScript</h2>
-                    <!-- <p>discription</p>
+      <div class="container">
+        <h1 class="sub-txt">Skills</h1>
+        <div class="skill-list">
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+            <h2>Java</h2>
+            <p>discription</p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python</h2>
+            <p>discription</p>
+            <!-- <a href="#">learn more</a> -->
+          </div>
+          <div>
+            <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+            <i class="fa-brands fa-square-js"></i>
+            <h2>javaScript</h2>
+            <!-- <p>discription</p>
                     <a href="#">learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-brands fa-html5"></i>
-                    <h2>HTML</h2>
-                    <p>discription</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <h2>CSS</h2>
-                    <p>discription</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-react"></i>
-                    <h2>React</h2>
-                    <p>discription</p>
-                    <a href="#">learn more</a>
-                </div>
-            </div>
+          </div>
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>HTML</h2>
+            <p>discription</p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>CSS</h2>
+            <p>discription</p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React</h2>
+            <p>discription</p>
+            <a href="#">learn more</a>
+          </div>
         </div>
+      </div>
     </div>
-
-
 
     <!-- projects-->
     <div id="projects">
-        <div class="container">
-            <h1 class="sub-txt">My Projects</h1>
-            <div class="project-list">
-                <div class="work">
-                    <img src="images/portfolio.png"/>
-                    <div class="layer">
-                        <h3>My Portfolio</h3>
-                        <p>It is my portfolio made using html css and javascript, fully resposive website.</p>
-                        <a href="https://opmportfolio.netlify.app/"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/car.jpeg"/>
-                    <div class="layer">
-                        <h3>Car Website</h3>
-                        <p>dscription</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/portfolioImage3.jpg"/>
-                    <div class="layer">
-                        <h3>Photo Saving Website</h3>
-                        <p>dscription</p>
-                        <a href="#"><i class="fa-solid fa-link"></i>Link</a>
-                    </div>
-                </div>
-
+      <div class="container">
+        <h1 class="sub-txt">My Projects</h1>
+        <div class="project-list">
+          <div class="work">
+            <img src="images/portfolio.png" />
+            <div class="layer">
+              <h3>My Portfolio</h3>
+              <p>
+                It is my portfolio made using html css and javascript, fully
+                resposive website.
+              </p>
+              <a href="https://opmportfolio.netlify.app/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
-            <!-- <a class="btn" href="#">See more</a> -->
-               
+          </div>
+          <div class="work">
+            <img src="images/car.jpeg" />
+            <div class="layer">
+              <h3>Car Website</h3>
+              <p>dscription</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/portfolioImage3.jpg" />
+            <div class="layer">
+              <h3>Photo Saving Website</h3>
+              <p>dscription</p>
+              <a href="#"><i class="fa-solid fa-link"></i>Link</a>
+            </div>
+          </div>
         </div>
+        <!-- <a class="btn" href="#">See more</a> -->
+      </div>
     </div>
 
     <!-- --------------- contact ----------------- -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-l">
-                    <h1 class="sub-txt">Contact Me</h1>
-                    <P><i class="fa-solid fa-location-dot"></i> KEC Katihar, Bihar</P>
-                    <p><i class="fa-solid fa-paper-plane"></i>Omprakashmallik91@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i> +91 7352281493</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <!-- <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> -->
-                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    <!-- <a class="btn btn2" href="images/my-photo.jpg" download>Download CV</a> -->
-                </div>
-                <div class="contact-r">
-                    <form >
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Send Message</button>
-                    </form>
-                    <!-- <span id="msg">hello</span> -->
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-l">
+            <h1 class="sub-txt">Contact Me</h1>
+            <p><i class="fa-solid fa-location-dot"></i> KEC Katihar, Bihar</p>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>Omprakashmallik91@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> +91 7352281493</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <!-- <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> -->
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://www.twitch.tv/" target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </div>
+            <!-- <a class="btn btn2" href="images/my-photo.jpg" download>Download CV</a> -->
+          </div>
+          <div class="contact-r">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Send Message</button>
+            </form>
+            <!-- <span id="msg">hello</span> -->
+          </div>
         </div>
-        <div class="copyright">
-            <!-- <p>© 2023 copyright all right reserved</p> -->
-            <p>Copyright ©️ 2023 OmPrakashMalliik All rights reserved.</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <!-- <p>© 2023 copyright all right reserved</p> -->
+        <p>Copyright ©️ 2023 OmPrakashMalliik All rights reserved.</p>
+      </div>
     </div>
 
-
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <!-- <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
+    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+    <!-- <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
                         <div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;">
                             <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Katihar+Engineering+College,+Katihar,+National+Highway+31,+Hardiya+Gunj,+Katihar,+Bihar,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
                             </iframe>
@@ -222,10 +267,7 @@
                         <style>#canvas-for-googlemap img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style>
                     </div> -->
 
-
     <!-- javascript -->
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
