@@ -30,3 +30,23 @@ var typed = new Typed(".text", {
   backDelay: 1000,
   loop: true,
 });
+
+
+
+
+
+
+
+//scroll
+
+window.addEventListener("scroll", function() {
+  var header = document.getElementById("header");
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 0) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
