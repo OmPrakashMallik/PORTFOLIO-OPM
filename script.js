@@ -32,11 +32,6 @@ var typed = new Typed(".text", {
 });
 
 
-
-
-
-
-
 //scroll
 
 window.addEventListener("scroll", function() {
