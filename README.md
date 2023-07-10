@@ -4,5 +4,5 @@ HTML, CSS, JavaScript and Bootstrap Portfolio Website
 * HTML, CSS and JavaScript
 * [Font Awesome 5](https://fontawesome.com/)
 
-This is the [live demo](https://brad-portfolio.netlify.app/) of the project . 
+Click the [Link](https://opmportfolio.netlify.app/) to see my portfolio project. 
 
