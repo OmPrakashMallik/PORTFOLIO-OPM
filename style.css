@@ -21,7 +21,6 @@
   font-family: "Arial";
   position: relative;
   font-size: 30px;
-  /* color: white; */
   color: #ff7200;
   text-decoration: none;
   font-weight: 600;
@@ -43,12 +42,12 @@
   animation: slideTop 1s ease forwards;
 }
 
-.navbar a:hover {
+/* .navbar a:hover {
   color: #ff7200;
 }
 .navbar a.active-link {
     color: yellow;
-  }
+  } */
   
 
 .home {
@@ -471,7 +470,8 @@ form .btn2 {
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background-color: #262626;
+  /* background-color: #262626; */
+  background-color: rgb(0, 0, 80); 
   font-weight: 300;
   margin-top: 20px;
 }
@@ -486,42 +486,34 @@ nav .fa-solid {
   #header {
     background-image: url("images/Royal\ Blue\ Dark\ Blue\ Phone\ Wallpaper.jpeg");
   }
-  .header-txt {
-    margin-top: 100%;
-    font-size: 16px;
+  .navbar a {
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 16px;
+    /* margin: 5px 0; */
   }
-  .header-txt h1 {
-    font-size: 46px;
+  .header {
+    padding: 10px 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-
-  nav .fa-solid {
-    display: block;
-    font-size: 25px;
-    cursor: pointer;
+  
+  .logo {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: none;
   }
-  nav ul {
-    /* background-color: #ff004f; */
-    background-color: #4a4a4a;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 25px;
+  
+  .navbar {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
   }
 
-  nav ul .fa-solid {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-  }
+  
   .sub-txt {
     font-size: 40px;
   }
