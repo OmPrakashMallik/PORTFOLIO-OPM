@@ -1,485 +1,546 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* font-family: 'Arial'; */
-    /* font-family: 'poppins', sans-serif; */
-    box-sizing: border-box;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* padding: 20px 10px; */
+  padding: 10px 10%;
+  background: transparent;
+  /* background-color: rgb(0,0,80); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
-html{
-    scroll-behavior: smooth;
+.header.scrolled {
+    background-color: rgb(0, 0, 80); 
 }
 
-body{
-    background-color: #080808;
-    color: #fff;
+.logo {
+  font-family: "Arial";
+  position: relative;
+  font-size: 30px;
+  color: #ff7200;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 1;
+  animation: slideRight 1s ease forwards;
 }
 
-/* header */
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url("images/_land-Royal\ Blue\ Dark\ Blue\ Phone\ Wallpaper.jpeg");
-    background-size: cover;
-    background-position: center;
+.navbar a {
+  font-family: "Arial";
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+  opacity: 1;
+  animation: slideTop 1s ease forwards;
 }
 
-
-/* NAVBAR */
-.container {
-    padding: 10px 10%;
+/* .navbar a:hover {
+  color: #ff7200;
 }
-
-nav{
-    margin-top: 20px;
-    font-family: 'Arial';
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.logo{
-    width: 140px;
-    border-radius: 50%;
-}
+.navbar a.active-link {
+    color: yellow;
+  } */
   
-/* Navbar links */
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
 
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
+.home {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  background: url("images/_land-Royal\ Blue\ Dark\ Blue\ Phone\ Wallpaper.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 10px 0;
 }
 
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background-color: #ff7200;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+.home-content {
+  max-width: 600px;
 }
 
-nav ul li a:hover::after {
-    width: 100%;
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 0.7s;
 }
 
-.header-txt {
-    font-family: 'Times New Roman';
-    margin-top: 20%;
-    font-size: 30px;
+.home-content h3 span {
+  color: #ff7200;
 }
-.header-txt h3 {
-    font-size: 30px;
-    margin-top: 20px;
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
 }
-.header-txt h1 {
-    font-size: 60px;
-    /* margin-top: 20px; */
-    color: #ff7200;
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
+.home-content p {
+  font-size: 20px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* ******************DONT F#CK WITH THIS******************* */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Arial'; */
+  /* font-family: 'poppins', sans-serif; */
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080808;
+  color: #fff;
+}
+
+.container {
+  padding: 40px 10%;
 }
 
 /* ABOUT */
-#about{
-    padding: 40px 0;
-    color: #fff;
+#about {
+  padding: 40px 0;
+  color: #fff;
 }
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.column1{
-    flex-basis: 35%;
+.column1 {
+  flex-basis: 35%;
 }
 
-.column1 img{
-    width: 100%;
-    border-radius: 25px;
+.column1 img {
+  width: 100%;
+  border-radius: 25px;
 }
 
-.column2{
-    flex-basis: 60%;
+.column2 {
+  flex-basis: 60%;
 }
 
-.sub-txt{
-    padding-bottom: 20px;
-    font-family: 'Times New Roman';
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
+.sub-txt {
+  padding-bottom: 20px;
+  font-family: "Times New Roman";
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .tab-title {
-    display: flex;
-    margin: 20px 0 40px;
+  display: flex;
+  margin: 20px 0 40px;
 }
 
 .tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
 }
 
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background-color: #ff7200;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ff7200;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
 }
 
-.tab-links.active-link::after{
-    width: 50%;
+.tab-links.active-link::after {
+  width: 50%;
 }
 
-.tab-content ul li{
-    list-style: none;
-    margin: 10px 0;
+.tab-content ul li {
+  list-style: none;
+  margin: 10px 0;
 }
-.tab-content ul li span{
-    color: #ff7200;
-    font-size: 14px;
+.tab-content ul li span {
+  color: #ff7200;
+  font-size: 14px;
 }
 
 .tab-content {
-    display: none;
+  display: none;
 }
 
 .tab-content.active-tab {
-    display: block;
+  display: block;
 }
 
 .code-icons {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .code-icons a {
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Arial';
-    font-weight: bold;
-    margin-right:18px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Arial";
+  font-weight: bold;
+  margin-right: 18px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
 }
 
-.code-icons a:hover{
-    /* color: #ff004f; */
-    color: #ff7200;
-    transform: translateY(-5px);
+.code-icons a:hover {
+  /* color: #ff004f; */
+  color: #ff7200;
+  transform: translateY(-5px);
 }
 
 /* skills */
 
 #skills {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 .skill-list {
-    display: grid;;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
 .skill-list div {
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+  background: #262626;
+  padding: 25px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
 }
 .skill-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 .skill-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .skill-list div a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
 }
 
-.skill-list div:hover{
-    background-color: #ff7200;
-    transform: translateY(-10px);
+.skill-list div:hover {
+  background-color: #ff7200;
+  transform: translateY(-10px);
 }
-
 
 /* projects */
 
-#projects{
-    padding: 50px 0;
-
+#projects {
+  padding: 50px 0;
 }
 
 .project-list {
-    display: grid;;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
 .work {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .work img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
 }
 
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff7200);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff7200);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
 }
 
 .layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 .layer a {
-    margin-top: 20px;
-    color: #ff7200;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background-color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
+  margin-top: 20px;
+  color: #ff7200;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.work:hover img{
-    transform: scale(1.1);
+.work:hover img {
+  transform: scale(1.1);
 }
 
-.work:hover .layer{
-    height: 100%;
+.work:hover .layer {
+  height: 100%;
 }
 
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff7200;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff7200;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s;
 }
-.btn:hover{
-    /* background: #ff004f; */
-    background: #ff7200;
-
+.btn:hover {
+  /* background: #ff004f; */
+  background: #ff7200;
 }
 
 /* CONTACT */
 
-.contact-l{
-    flex-basis: 35%;
+.contact-l {
+  flex-basis: 35%;
 }
 
-.contact-r{
-    flex-basis: 60%;
+.contact-r {
+  flex-basis: 60%;
 }
 
-.contact-l p{
-    margin-top: 30px;
+.contact-l p {
+  margin-top: 30px;
 }
-.contact-l p i{
-    /* color: #ff004f; */
-    color: #ff7200;
-    margin-right: 15px;
-    font-size: 25px;
+.contact-l p i {
+  /* color: #ff004f; */
+  color: #ff7200;
+  margin-right: 15px;
+  font-size: 25px;
 }
 
 .social-icons {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .social-icons a {
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'Arial';
-    /* font-weight: bold; */
-    margin-right: 20px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Arial";
+  /* font-weight: bold; */
+  margin-right: 20px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
 }
 
-.social-icons a:hover{
-    /* color: #ff004f; */
-    color: #ff7200;
-    transform: translateY(-5px);
+.social-icons a:hover {
+  /* color: #ff004f; */
+  color: #ff7200;
+  transform: translateY(-5px);
 }
 
-.btn.btn3{
-    display: inline-block;
-    font-family: 'Arial';
-    /* background-color: #ff004f;   */
-    /* background-color: #ff7200;  */
+.btn.btn3 {
+  display: inline-block;
+  font-family: "Arial";
+  /* background-color: #ff004f;   */
+  /* background-color: #ff7200;  */
 }
-.btn.btn2{
-    display: inline-block;
-    /* background-color: #ff004f;   */
-    background-color: #ff7200; 
+.btn.btn2 {
+  display: inline-block;
+  /* background-color: #ff004f;   */
+  background-color: #ff7200;
 }
 
 .contact-r form {
-    width: 100%;
+  width: 100%;
 }
 
-form input, form textarea {
-    width: 100%;
-    border: 0;
-    outline: none;
-    background-color: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
 }
 
-form .btn2{
-    padding: 14px 16px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
+form .btn2 {
+  padding: 14px 16px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background-color: #262626;
-    font-weight: 300;
-    margin-top: 20px;
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  /* background-color: #262626; */
+  background-color: rgb(0, 0, 80); 
+  font-weight: 300;
+  margin-top: 20px;
 }
-
 
 /* --------------- CSS FOR SMALL SCREEN ---------------- */
 
 nav .fa-solid {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    #header {
-        background-image: url("images/Royal\ Blue\ Dark\ Blue\ Phone\ Wallpaper.jpeg");
-    }
-    .header-txt {
-        margin-top: 100%;
-        font-size: 16px;
-    }
-    .header-txt h1 {
-        font-size: 46px;
-    }
+  #header {
+    background-image: url("images/Royal\ Blue\ Dark\ Blue\ Phone\ Wallpaper.jpeg");
+  }
+  .navbar a {
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 16px;
+    /* margin: 5px 0; */
+  }
+  .header {
+    padding: 10px 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: none;
+  }
+  
+  .navbar {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+  }
 
-    nav .fa-solid {
-        display: block;
-        font-size: 25px;
-        cursor: pointer;
+  
+  .sub-txt {
+    font-size: 40px;
+  }
+  .column1 {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .column2 {
+    flex-basis: 100%;
+    font-size: 14px;
+  }
 
-    }
-    nav ul {
-        /* background-color: #ff004f; */
-        background-color: #4a4a4a;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
+  .tab-links {
+    font-size: 16px;
+    /* margin-right: 20px; */
+  }
 
-    nav ul .fa-solid {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-    .sub-txt{
-        font-size: 40px;
-    }
-    .column1 {
-        flex-basis: 100%;
-        margin-bottom: 30px;
-    }
-    .column2 {
-        flex-basis: 100%;
-        font-size: 14px;
-    }
+  .contact-l,
+  .contact-r {
+    flex-basis: 100%;
+  }
 
-    .tab-links {
-        font-size: 16px;
-        /* margin-right: 20px; */
-    }
-
-    .contact-l, .contact-r {
-        flex-basis: 100%;
-    }
-
-    .copyright {
-        font-size: 12px;
-        padding: 25px 0;
-    }
-    .contact-l p{
-        font-size: 14px;
-    }
-
+  .copyright {
+    font-size: 12px;
+    padding: 25px 0;
+  }
+  .contact-l p {
+    font-size: 14px;
+  }
 }
