@@ -489,13 +489,13 @@ nav .fa-solid {
   .navbar a {
     /* position: sticky;
     top: 0; */
-    font-size: 18px;
-    font-weight: 700;
-    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 5px;
     /* margin: 5px 0; */
   }
   .header {
-    padding: 10px 2%;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
