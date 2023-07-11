@@ -511,6 +511,7 @@ nav .fa-solid {
 
   .navbar {
     /* display: flex; */
+    padding: 10px 0;
     flex-direction: column;
     align-items: center;
   }
