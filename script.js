@@ -44,4 +44,14 @@ window.addEventListener("scroll", function() {
     header.classList.remove("scrolled");
   }
 });
+window.addEventListener("scroll", function() {
+  var logo = document.getElementById("logo");
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 0) {
+    logo.classList.add("scrolled");
+  } else {
+    logo.classList.remove("scrolled");
+  }
+});
 
