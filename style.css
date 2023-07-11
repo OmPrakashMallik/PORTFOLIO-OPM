@@ -487,9 +487,11 @@ nav .fa-solid {
     background-image: url("images/Royal\ Blue\ Dark\ Blue\ Phone\ Wallpaper.jpeg");
   }
   .navbar a {
-    font-size: 10px;
-    font-weight: 500;
-    margin-left: 16px;
+    /* position: sticky;
+    top: 0; */
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
     /* margin: 5px 0; */
   }
   .header {
@@ -508,6 +510,7 @@ nav .fa-solid {
   }
   
   .navbar {
+
     /* display: flex; */
     flex-direction: column;
     align-items: center;
