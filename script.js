@@ -1,16 +1,34 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontent = document.getElementsByClassName("tab-content");
 
-function opentab(tabname) {
-  for (tablink of tablinks) {
-    tablink.classList.remove("active-link");
-  }
-  for (tablink of tabcontent) {
-    tablink.classList.remove("active-tab");
-  }
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
+// function opentab(tabname) {
+//   for (tablink of tablinks) {
+//     tablink.classList.remove("active-link");
+//   }
+//   for (tablink of tabcontent) {
+//     tablink.classList.remove("active-tab");
+//   }
+//   event.currentTarget.classList.add("active-link");
+//   document.getElementById(tabname).classList.add("active-tab");
+// }
+
+
+// active
+// Get the container element
+var btnContainer = document.getElementById("sidemenu");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("mbtn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
+
 
 //menu
 var sidemenu = document.getElementById("sidemenu");
