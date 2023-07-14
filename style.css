@@ -479,9 +479,9 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
-  #header {
+  /* #header {
     background-image: url("images/home-phone.jpg");
-  }
+  } */
   .navbar a {
     /* position: sticky;
     top: 0; */
@@ -491,6 +491,7 @@ nav .fa-solid {
     /* margin: 5px 0; */
   }
   .header {
+    background-color: rgb(0, 0, 80);
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -527,6 +528,14 @@ nav .fa-solid {
   .home-content h3 {
     font-size: 20px;
     font-weight: 700;
+  }
+
+  #Home {
+    background-image: url("images/home-phone.jpg");
+  }
+
+  .home-content {
+    margin-top: 250px;
   }
 
   .sub-txt {
